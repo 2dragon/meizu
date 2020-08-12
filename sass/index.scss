@@ -1,0 +1,112 @@
+@mixin aligncenter {
+  margin: 0 auto;
+}
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.top {
+  @include clearfix;
+
+  .topwrap {
+    @include clearfix;
+
+    .top-nav-wrap {
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      z-index: 100;
+      .top-nav {
+        width: 1240px;
+        height: 80px;
+        @include aligncenter;
+        .top-nav-left {
+          float: left;
+          svg {
+            width: 125px;
+            height: 80px;
+          }
+        }
+        .top-nav-right {
+          width: auto;
+          height: 80px;
+          line-height: 80px;
+          float: right;
+          .top-nav-right-ul {
+            float: left;
+            li {
+              float: left;
+              a {
+                font-size: 14px;
+                color: #fff;
+                padding: 31px 20px 30px 20px;
+              }
+            }
+          }
+          .top-nav-right-inp {
+            float: left;
+            input {
+              width: 170px;
+              height: 30px;
+              line-height: 29px;
+              margin: 23px 5px 0 10px;
+              border: 1px solid #999;
+              border-radius: 20px;
+              font-size: 12px;
+              background-color: #fff;
+              box-sizing: border-box;
+            }
+          }
+          .top-nav-right-people {
+            float: left;
+            width: 29px;
+            height: 29px;
+            margin-left: 8px;
+            i {
+              font-size: 20px;
+              color: #fff;
+            }
+          }
+          .top-nav-right-buycar {
+            float: left;
+            width: 29px;
+            height: 29px;
+            margin-left: 8px;
+            i {
+              font-size: 20px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .top-img-container {
+      width: 100%;
+      height: 670px;
+      .swiper-wrapper {
+        width: 100%;
+        height: 670px;
+        .swiper-slide {
+          position: relative;
+          overflow: hidden;
+          img {
+            width: auto;
+            height: 670px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+          }
+        }
+      }
+      .swiper-pagination{
+        margin-bottom: 20px;
+        margin-right:  100px;
+      }
+    }
+  }
+}
