@@ -279,7 +279,7 @@
   font-size: 30px;
   font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
   text-align: center;
-  padding: 45px 0 10px 0;
+  padding: 45px 0 15px 0;
   background-color: #f4f4f4;
 }
 
@@ -368,4 +368,191 @@
   margin-right: 10px;
   float: left;
   background-color: #fff;
+}
+
+.section .section-center .fourshow .fourshow-goods img {
+  display: block;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section .section-center .fourshow .fourshow-goods .goodstit {
+  width: 303px;
+  height: 80px;
+}
+
+.section .section-center .fourshow .fourshow-goods .goodstit h1 {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.section .section-center .fourshow .fourshow-goods .goodstit p {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #999;
+}
+
+.section .section-center .fourshow .fourshow-goods .goodstit h2 {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  font-size: 22px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #cc0000;
+}
+
+.goodslist {
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+}
+
+.goodslist::before, .goodslist::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.goodslist h3 {
+  font-size: 30px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  text-align: center;
+  padding: 45px 0 15px 0;
+  background-color: #f4f4f4;
+}
+
+.goodslist .secimg {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.goodslist .secimg img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.goodslist .glsec-center {
+  width: 1260px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.goodslist .glsec-center .glsec {
+  width: 100%;
+  height: 375px;
+  margin-top: 15px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-header {
+  float: left;
+  width: 303px;
+  height: 375px;
+  margin-right: 10px;
+  float: left;
+  background-color: #fff;
+  position: relative;
+  background: url("/image/goodslist/list1.jpg") no-repeat;
+  background-size: 303px 375px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-header .goodstit {
+  width: 303px;
+  height: 80px;
+  margin-top: 267px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-header .goodstit h1 {
+  width: 100%;
+  height: 31px;
+  text-align: center;
+  font-size: 21px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-header .goodstit p {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #fff;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-header .goodstit h2 {
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #ebce68;
+  font-weight: bold;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-show {
+  float: left;
+  width: 303px;
+  height: 375px;
+  margin-right: 10px;
+  float: left;
+  background-color: #fff;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-show img {
+  display: block;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-show .goodstit {
+  width: 303px;
+  height: 80px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-show .goodstit h1 {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-show .goodstit p {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #999;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-show .goodstit h2 {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  font-size: 22px;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  color: #cc0000;
 }
