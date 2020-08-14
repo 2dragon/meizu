@@ -248,7 +248,7 @@
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down .people-down-ul li a:hover {
-  color: #3BA7FF;
+  color: #3ba7ff;
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar {
@@ -505,6 +505,7 @@
 .goodslist {
   width: 100%;
   height: auto;
+  padding-bottom: 70px;
   background-color: #f4f4f4;
 }
 
@@ -545,6 +546,12 @@
   width: 100%;
   height: 375px;
   margin-top: 15px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 12px;
 }
 
 .goodslist .glsec-center .glsec .glsec-item .glsec-item-header {
@@ -645,4 +652,80 @@
   font-size: 22px;
   font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
   color: #cc0000;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 48px 0 0px 0;
+}
+
+.footer .footer-center {
+  width: 1260px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.footer .footer-center .footer-server {
+  width: 1000px;
+  height: 84px;
+}
+
+.footer .footer-center .footer-server .footer-server-item {
+  width: 150px;
+  height: 68px;
+  float: left;
+}
+
+.footer .footer-center .footer-server .footer-server-item img {
+  width: 50px;
+  height: 39px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer .footer-center .footer-server .footer-server-item p {
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer .footer-center .footer-hr {
+  margin: 10px auto 28px;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+
+.footer .footer-center .footer-info {
+  width: 941px;
+  height: 18px;
+}
+
+.footer .footer-center .footer-info .footer-info-ul {
+  color: #999;
+}
+
+.footer .footer-center .footer-info .footer-info-ul li {
+  float: left;
+}
+
+.footer .footer-center .footer-info .footer-info-ul li .footer-info-line {
+  margin: 0 15px;
+}
+
+.footer .footer-center .footer-href {
+  padding-top: 8px;
+  color: #999;
+}
+
+.footer .footer-center .footer-href a {
+  color: #999;
 }
