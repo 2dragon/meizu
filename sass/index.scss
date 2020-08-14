@@ -174,10 +174,55 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
             height: 29px;
             padding-top: 29px;
             margin-left: 8px;
+            position: relative;
+            &:hover .people-down {
+              display: block;
+            }
             i {
               font-size: 20px;
               color: #fff;
               color: #515151;
+            }
+
+            .people-down {
+              display: none;
+              &::before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border: 10px solid;
+                border-color: transparent transparent #fff;
+                position: absolute;
+                top: 47px;
+                left: 0;
+              }
+
+              .people-down-ul {
+                width: 98px;
+                height: 115px;
+                background-color: #fff;
+                margin-left: 48px;
+                padding: 15px 0;
+                position: absolute;
+                top: 63px;
+                left: -85px;
+
+                li {
+                  width: 98px;
+                  height: 18px;
+                  line-height: 18px;
+                  text-align: center;
+                  margin-bottom: 15px;
+
+                  a {
+                    color: #515151;
+                    &:hover{
+                      color: #3BA7FF;
+                    }
+                  }
+                }
+              }
             }
           }
           .top-nav-right-buycar {
@@ -186,10 +231,48 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
             height: 29px;
             padding-top: 29px;
             margin-left: 8px;
+            position: relative;
+            &:hover .buycar-down {
+              display: block;
+            }
             i {
               font-size: 20px;
               color: #fff;
               color: #515151;
+            }
+            .buycar-down {
+              display: none;
+              &::before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border: 10px solid;
+                border-color: transparent transparent #fff;
+                position: absolute;
+                top: 45px;
+                left: 0;
+              }
+              .buycar-down-ul {
+                width: 360px;
+                height: 85px;
+                background-color: #fff;
+                margin-left: 48px;
+                padding: 15px 0;
+                position: absolute;
+                top: 65px;
+                left: -380px;
+                li {
+                  width: 98px;
+                  height: 18px;
+                  line-height: 18px;
+                  text-align: center;
+                  margin-bottom: 15px;
+                  a {
+                    color: #515151;
+                  }
+                }
+              }
             }
           }
         }
@@ -405,7 +488,7 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
           float: left;
           background-color: #fff;
           position: relative;
-          background: url('/image/goodslist/list1.jpg') no-repeat;
+          background: url("/image/goodslist/list1.jpg") no-repeat;
           background-size: 303px 375px;
           .goodstit {
             width: 303px;

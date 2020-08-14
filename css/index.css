@@ -195,6 +195,11 @@
   height: 29px;
   padding-top: 29px;
   margin-left: 8px;
+  position: relative;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people:hover .people-down {
+  display: block;
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people i {
@@ -203,17 +208,104 @@
   color: #515151;
 }
 
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down {
+  display: none;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent #fff;
+  position: absolute;
+  top: 47px;
+  left: 0;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down .people-down-ul {
+  width: 98px;
+  height: 115px;
+  background-color: #fff;
+  margin-left: 48px;
+  padding: 15px 0;
+  position: absolute;
+  top: 63px;
+  left: -85px;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down .people-down-ul li {
+  width: 98px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down .people-down-ul li a {
+  color: #515151;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down .people-down-ul li a:hover {
+  color: #3BA7FF;
+}
+
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar {
   float: left;
   width: 29px;
   height: 29px;
   padding-top: 29px;
   margin-left: 8px;
+  position: relative;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar:hover .buycar-down {
+  display: block;
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar i {
   font-size: 20px;
   color: #fff;
+  color: #515151;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down {
+  display: none;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent #fff;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down .buycar-down-ul {
+  width: 360px;
+  height: 85px;
+  background-color: #fff;
+  margin-left: 48px;
+  padding: 15px 0;
+  position: absolute;
+  top: 65px;
+  left: -380px;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down .buycar-down-ul li {
+  width: 98px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down .buycar-down-ul li a {
   color: #515151;
 }
 
