@@ -25,7 +25,7 @@
     position: relative;
     .reg-main-box {
       width: 368px;
-      height: 516px;
+      height: auto;
       background-color: #fff;
       border-radius: 2px;
       box-shadow: 0 6px 12px 0 rgba(138, 153, 150, 0.15);
@@ -34,20 +34,22 @@
       left: 927px;
       .boxinner {
         width: 298px;
-        height: 424px;
+        height: auto;
         padding-top: 70px;
+        padding-bottom: 40px;
         margin: 0 auto;
         h1 {
-          color: #387aff;
-          font-size: 18px;
+          color: #515151;
+          font-weight: bold;
+          font-size: 21px;
           text-align: center;
         }
         .phone-inp {
           width: 298px;
           height: 48px;
           border: 1px solid rgb(218, 218, 218);
-          margin-top: 100px;
-          margin-bottom: 36px;
+          margin-top: 40px;
+          margin-bottom: 0px;
           .qvhao {
             width: 65px;
             height: 48px;
@@ -73,34 +75,6 @@
             margin-left: 8px;
           }
         }
-        .numsure {
-          width: 298px;
-          height: 42px;
-          border: 1px solid rgb(218, 218, 218);
-          margin-bottom: 36px;
-          span {
-            display: inline-block;
-            font-size: 14px;
-            color: #666;
-            line-height: 42px;
-            margin-left: 15px;
-          }
-        }
-
-        .tips {
-          height: 20px;
-          line-height: 20px;
-          i {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            font-size: 18px;
-            color: rgb(218, 218, 218);
-          }
-          a {
-            color: #387aff;
-          }
-        }
 
         .btn {
           width: 100%;
@@ -111,6 +85,13 @@
           color: #fff;
         }
         .login {
+          font-size: 14px;
+          color: #387aff;
+          margin-top: 10px;
+          float: left;
+        }
+        .forgetpsd {
+          float: right;
           font-size: 14px;
           color: #387aff;
           margin-top: 10px;
@@ -181,9 +162,9 @@
           background: url("/image/sprit/base.png") no-repeat -207px -80px;
         }
       }
-      .reg-footer-line2{
+      .reg-footer-line2 {
         margin-top: 15px;
-        color:#7f7f7f;
+        color: #7f7f7f;
       }
     }
   }

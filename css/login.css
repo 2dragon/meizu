@@ -32,7 +32,7 @@
 
 .register .reg-main .reg-main-box {
   width: 368px;
-  height: 516px;
+  height: auto;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 6px 12px 0 rgba(138, 153, 150, 0.15);
@@ -43,14 +43,16 @@
 
 .register .reg-main .reg-main-box .boxinner {
   width: 298px;
-  height: 424px;
+  height: auto;
   padding-top: 70px;
+  padding-bottom: 40px;
   margin: 0 auto;
 }
 
 .register .reg-main .reg-main-box .boxinner h1 {
-  color: #387aff;
-  font-size: 18px;
+  color: #515151;
+  font-weight: bold;
+  font-size: 21px;
   text-align: center;
 }
 
@@ -58,8 +60,8 @@
   width: 298px;
   height: 48px;
   border: 1px solid #dadada;
-  margin-top: 100px;
-  margin-bottom: 36px;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 .register .reg-main .reg-main-box .boxinner .phone-inp .qvhao {
@@ -88,38 +90,6 @@
   margin-left: 8px;
 }
 
-.register .reg-main .reg-main-box .boxinner .numsure {
-  width: 298px;
-  height: 42px;
-  border: 1px solid #dadada;
-  margin-bottom: 36px;
-}
-
-.register .reg-main .reg-main-box .boxinner .numsure span {
-  display: inline-block;
-  font-size: 14px;
-  color: #666;
-  line-height: 42px;
-  margin-left: 15px;
-}
-
-.register .reg-main .reg-main-box .boxinner .tips {
-  height: 20px;
-  line-height: 20px;
-}
-
-.register .reg-main .reg-main-box .boxinner .tips i {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  font-size: 18px;
-  color: #dadada;
-}
-
-.register .reg-main .reg-main-box .boxinner .tips a {
-  color: #387aff;
-}
-
 .register .reg-main .reg-main-box .boxinner .btn {
   width: 100%;
   height: 46px;
@@ -130,6 +100,14 @@
 }
 
 .register .reg-main .reg-main-box .boxinner .login {
+  font-size: 14px;
+  color: #387aff;
+  margin-top: 10px;
+  float: left;
+}
+
+.register .reg-main .reg-main-box .boxinner .forgetpsd {
+  float: right;
   font-size: 14px;
   color: #387aff;
   margin-top: 10px;

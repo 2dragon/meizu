@@ -2,6 +2,10 @@
   background-color: #fff;
 }
 
+.blackpink {
+  color: #333 !important;
+}
+
 .notshow {
   display: none;
 }
@@ -98,7 +102,6 @@
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-uldown .top-nav-right-ul .navitem a {
   font-size: 14px;
-  color: #515151;
   padding: 31px 20px 30px 20px;
   font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
 }
@@ -193,7 +196,7 @@
   float: left;
   width: 29px;
   height: 29px;
-  padding-top: 29px;
+  padding-top: 27px;
   margin-left: 8px;
   position: relative;
 }
@@ -202,10 +205,9 @@
   display: block;
 }
 
-.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people i {
-  font-size: 20px;
-  color: #fff;
-  color: #515151;
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people img {
+  width: 29px;
+  height: 29px;
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-people .people-down {
@@ -255,7 +257,7 @@
   float: left;
   width: 29px;
   height: 29px;
-  padding-top: 29px;
+  padding-top: 27px;
   margin-left: 8px;
   position: relative;
 }
@@ -264,10 +266,9 @@
   display: block;
 }
 
-.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar i {
-  font-size: 20px;
-  color: #fff;
-  color: #515151;
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar img {
+  width: 29px;
+  height: 29px;
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down {
@@ -559,17 +560,20 @@
   width: 303px;
   height: 375px;
   margin-right: 10px;
-  float: left;
-  background-color: #fff;
   position: relative;
-  background: url("/image/goodslist/list1.jpg") no-repeat;
-  background-size: 303px 375px;
+}
+
+.goodslist .glsec-center .glsec .glsec-item .glsec-item-header img {
+  width: 303px;
+  height: 375px;
 }
 
 .goodslist .glsec-center .glsec .glsec-item .glsec-item-header .goodstit {
   width: 303px;
   height: 80px;
-  margin-top: 267px;
+  position: absolute;
+  top: 276px;
+  z-index: 100;
 }
 
 .goodslist .glsec-center .glsec .glsec-item .glsec-item-header .goodstit h1 {
