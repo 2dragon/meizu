@@ -10,6 +10,13 @@
     clear: both;
   }
 }
+// .hovershadow{
+
+// }
+// .hovermask{
+  
+// }
+
 $pcolor: #515151;
 $bgcolor: #f4f4f4;
 $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
@@ -264,15 +271,14 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
                 position: absolute;
                 top: 65px;
                 left: -380px;
-                li {
-                  width: 98px;
-                  height: 18px;
-                  line-height: 18px;
-                  text-align: center;
-                  margin-bottom: 15px;
-                  a {
-                    color: #515151;
-                  }
+
+                .bear{
+                  width: 100px;
+                  height: 80px;
+                  background-color: #0f0;
+                  position: absolute;
+                  z-index: 100;
+
                 }
               }
             }

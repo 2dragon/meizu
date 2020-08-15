@@ -298,16 +298,12 @@
   left: -380px;
 }
 
-.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down .buycar-down-ul li {
-  width: 98px;
-  height: 18px;
-  line-height: 18px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down .buycar-down-ul li a {
-  color: #515151;
+.top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-buycar .buycar-down .buycar-down-ul .bear {
+  width: 100px;
+  height: 80px;
+  background-color: #0f0;
+  position: absolute;
+  z-index: 100;
 }
 
 .adwrap {

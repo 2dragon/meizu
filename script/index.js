@@ -13,13 +13,13 @@ var mySwiper = new Swiper(".swiper-container", {
       if ("0124578".includes(this.activeIndex)) {
         $(".navitem a").css("color", "#fff");
         $(".top-nav-left svg").attr("fill", "#fff");
-        $(".top-nav-right-people img").attr("src", "/image/people3.png");
-        $(".top-nav-right-buycar img").attr("src", "/image/buycar3.png");
+        $(".top-nav-right-people img").attr("src", "../image/people3.png");
+        $(".top-nav-right-buycar img").attr("src", "../image/buycar3.png");
       } else {
         $(".navitem a").css("color", "#333");
         $(".top-nav-left svg").attr("fill", "#008cff");
-        $(".top-nav-right-people img").attr("src", "/image/people.png");
-        $(".top-nav-right-buycar img").attr("src", "/image/buycar2.png");
+        $(".top-nav-right-people img").attr("src", "../image/people.png");
+        $(".top-nav-right-buycar img").attr("src", "../image/buycar2.png");
       }
     },
   },
