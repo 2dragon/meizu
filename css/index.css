@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .whitebg {
   background-color: #fff;
 }
@@ -8,6 +9,36 @@
 
 .notshow {
   display: none;
+}
+
+.baimengban:hover {
+  position: relative;
+}
+
+.baimengban:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.yinying:hover {
+  position: relative;
+}
+
+.yinying:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  -moz-box-shadow: 0px 0px 20px #ccc;
+  -webkit-box-shadow: 0px 0px 20px #ccc;
+  box-shadow: 3px 3px 10px #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .top::before, .top::after {
@@ -150,6 +181,9 @@
   height: 20px;
   text-align: center;
   color: #515151;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .top .topwrap .top-nav-wrap .top-nav .top-nav-right .top-nav-right-uldown .hoverdownwrap .hoverdown .the9 {
@@ -390,7 +424,7 @@
 }
 
 .section .section-center .twoshow {
-  margin-top: 15px;
+  margin-top: 10px;
   overflow: hidden;
 }
 
@@ -399,7 +433,23 @@
   height: 610px;
   background-color: #fff;
   float: left;
-  margin-right: 12px;
+  margin: 5px 6px;
+  position: relative;
+}
+
+.section .section-center .twoshow .twoshow-goods::before {
+  content: "赠品";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #ff3149, #ff64a6);
 }
 
 .section .section-center .twoshow .twoshow-goods .goodstit {
@@ -667,8 +717,9 @@
 }
 
 .footer .footer-center .footer-server {
-  width: 1000px;
+  width: 1260px;
   height: 84px;
+  position: relative;
 }
 
 .footer .footer-center .footer-server .footer-server-item {
@@ -693,6 +744,43 @@
   text-align: center;
 }
 
+.footer .footer-center .footer-server .kefu {
+  width: 158px;
+  height: 102px;
+  font-family: Helvetica, Tahoma, Arial, Hiragino Sans GB, Microsoft YaHei, SimSun, Heiti, sans-serif;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.footer .footer-center .footer-server .kefu .kefu-day {
+  color: #999;
+  font-size: 12px;
+  text-align: right;
+  float: right;
+}
+
+.footer .footer-center .footer-server .kefu .kefu-phone {
+  color: #008cff;
+  font-size: 25px;
+  text-align: right;
+  float: right;
+}
+
+.footer .footer-center .footer-server .kefu .kefu-online {
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background-color: #008cff;
+  float: right;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
 .footer .footer-center .footer-hr {
   margin: 10px auto 28px;
   display: block;
@@ -705,8 +793,9 @@
 }
 
 .footer .footer-center .footer-info {
-  width: 941px;
+  width: 1260px;
   height: 18px;
+  position: relative;
 }
 
 .footer .footer-center .footer-info .footer-info-ul {
@@ -719,6 +808,12 @@
 
 .footer .footer-center .footer-info .footer-info-ul li .footer-info-line {
   margin: 0 15px;
+}
+
+.footer .footer-center .footer-info img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer .footer-center .footer-href {
