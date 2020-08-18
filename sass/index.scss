@@ -36,25 +36,16 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
     top: 0;
     left: 0;
   }
 }
 .yinying:hover {
-  position: relative;
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    -moz-box-shadow: 0px 0px 20px #ccc;
-    -webkit-box-shadow: 0px 0px 20px #ccc;
-    box-shadow: 3px 3px 10px #ccc;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  -moz-box-shadow: 0px 0px 20px #ccc;
+  -webkit-box-shadow: 0px 0px 20px #ccc;
+  box-shadow: 3px 3px 10px #ccc;
 }
 
 .top {
@@ -393,7 +384,7 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
         float: left;
         margin: 5px 6px;
         position: relative;
-        &::before{
+        &::before {
           content: "赠品";
           width: 60px;
           height: 60px;
@@ -402,10 +393,10 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
           left: 30px;
           line-height: 60px;
           font-size: 16px;
-          color:#fff;
+          color: #fff;
           text-align: center;
           border-radius: 50%;
-          background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+          background-image: linear-gradient(120deg, #ff3149, #ff64a6);
         }
         .goodstit {
           width: 100%;

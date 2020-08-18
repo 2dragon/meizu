@@ -1,0 +1,114 @@
+[
+  {
+    "goodsnum": "1001",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "1002",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "1003",
+    "imgs": ["../image/jsomimg/200101.jpg", "../image/jsomimg/200102.jpg", "../image/jsomimg/200103.jpg", "../image/jsomimg/200104.jpg"],
+    "tit": "魅族 17",
+    "desc": "【限时领券立省100】【购魅族17赠全新壳膜套装】【老用户专享18个月超长延保】【学生购机享精美礼品】高通骁龙 865 + UFS 3.1 高速闪存",
+    "newprice":"3699.00",
+    "oldprice":"3799.00"
+  },
+  {
+    "goodsnum": "1004",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "1005",
+    "imgs": ["../image/jsomimg/100501.jpg", "../image/jsomimg/100502.jpg", "../image/jsomimg/100503.jpg", "../image/jsomimg/100504.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "1006",
+    "imgs": ["../image/jsomimg/100501.jpg", "../image/jsomimg/100502.jpg", "../image/jsomimg/100503.jpg", "../image/jsomimg/100504.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "1007",
+    "imgs": ["../image/jsomimg/100501.jpg", "../image/jsomimg/100502.jpg", "../image/jsomimg/100503.jpg", "../image/jsomimg/100504.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2001",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2002",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2003",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2004",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2005",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2006",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  },
+  {
+    "goodsnum": "2007",
+    "imgs": ["../image/jsomimg/100101.jpg", "../image/jsomimg/100102.jpg", "../image/jsomimg/100103.jpg"],
+    "tit": "魅族 HD60 降噪耳机",
+    "desc": "【夏日限时特惠999元】索尼主动降噪芯片 | 40mm镀铍振膜 | 触控操作 | USB - C 快充 | 轻奢品质",
+    "newprice":"1099.00",
+    "oldprice":"1299"
+  }  
+]

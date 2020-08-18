@@ -1,0 +1,16 @@
+[
+    {"goodsnum":"1001","src":"../image/top7.jpg"},
+    {"goodsnum":"1002","src":"../image/top2.jpg"},
+    {"goodsnum":"1003","src":"../image/top3.jpg"},
+    {"goodsnum":"1004","src":"../image/top4.jpg"},
+    {"goodsnum":"1005","src":"../image/top5.jpg"},
+    {"goodsnum":"1006","src":"../image/top6.jpg"},
+    {"goodsnum":"1007","src":"../image/top1.jpg"},
+    {"goodsnum":"2001","src":"../image/section/section1.jpg","name":"魅族 17","desc":"限时领券立省100+赠全新壳膜套装","price":"3699"},
+    {"goodsnum":"3001","src":"../image/section/ia_700001507.png","name":"魅族 17 Pro","desc":"限时领券至高立省300+赠全新壳膜套装","price":"4299"},
+    {"goodsnum":"3002","src":"../image/section/ia_700001508.png","name":"魅族 17 航母限定版","desc":"以梦为舰 热爱起航","price":"4299"},
+    {"goodsnum":"4001","src":"../image/section/ia_700001509.png","name":"魅族 17 航母限定版","desc":"以梦为舰 热爱起航","price":"4299"},
+    {"goodsnum":"4002","src":"../image/section/ia_700001510.png","name":"魅族 17 航母限定版","desc":"以梦为舰 热爱起航","price":"4299"},
+    {"goodsnum":"4003","src":"../image/section/ia_700001511.png","name":"魅族 17 航母限定版","desc":"以梦为舰 热爱起航","price":"4299"},
+    {"goodsnum":"4004","src":"../image/section/ia_700001512.png","name":"魅族 17 航母限定版","desc":"以梦为舰 热爱起航","price":"4299"}
+]
