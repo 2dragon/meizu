@@ -174,7 +174,7 @@ $fontf2: "PingFang SC", "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", Arial,
           .people-down-ul {
             width: 98px;
             height: 115px;
-            background-color: #fff;
+            background-color: #eee;
             margin-left: 48px;
             padding: 15px 0;
             position: absolute;
@@ -254,6 +254,7 @@ $fontf2: "PingFang SC", "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", Arial,
   height: 450px;
   position: relative;
   overflow: hidden;
+  z-index: -1;
   img {
     width: auto;
     height: 450px;
