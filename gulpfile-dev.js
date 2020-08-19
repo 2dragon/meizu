@@ -11,20 +11,29 @@ task('delDist',async ()=>{
 })
 
 // 处理图片
+// task('image', async ()=>{
+//   src('./image/*.*')
+//   .pipe(dest('./dist/image'))
+//   .pipe(load.connect.reload())
+// })
 task('image', async ()=>{
-  src('./image/*.*')
+  src('./image/**')
   .pipe(dest('./dist/image'))
-  .pipe(load.connect.reload())
 })
-
 // 处理sass
+// task('sass', async ()=>{
+//   src('./sass/*.scss')
+//   .pipe(load.sassChina())
+//   .pipe(dest('./dist/css'))
+//   .pipe(load.connect.reload())
+// })
 task('sass', async ()=>{
-  src('./sass/*.scss')
-  .pipe(load.sassChina())
+  src('./css/*.css')
+  // .pipe(load.sassChina())
+  // .pipe(load.minifyCss())
   .pipe(dest('./dist/css'))
   .pipe(load.connect.reload())
 })
-
 // 处理js
 task('script', async ()=>{
   src('./script/*.js')
@@ -46,15 +55,53 @@ task('watch',async ()=>{
   watch('./script/*.js',series('script'));
   watch('./pages/*.html',series('html'));
 })
+// 处理jq
+task('jq', async ()=>{
+  src(['./jquery-1.8.3/jquery-1.8.3.min.js'])
+  .pipe(dest('./dist/jquery-1.8.3'))
+})
+// 处理font-awesome
+task('font', async ()=>{
+  src(['./font-awesome/**'])
+  .pipe(dest('./dist/font-awesome'))
+})
+// 处理swiper
+task('swiper', async ()=>{
+  src(['./swiper/*.*'])
+  .pipe(dest('./dist/swiper'))
+})
+// 处理json
+task('json', async ()=>{
+  src(['./json/**'])
+  .pipe(dest('./dist/json'))
+})
+// 处理reset
+task('reset', async ()=>{
+  src(['./reset/**'])
+  .pipe(dest('./dist/reset'))
+})
+// 处理php
+task('php', async ()=>{
+  src(['./php/**'])
+  .pipe(dest('./dist/php'))
+})
+
+// 监听文件变化
+// task('watch',async ()=>{
+//   watch('./image/*.*',series('image'));
+//   watch('./style/*.css',series('style'));
+//   watch('./script/*.js',series('script'));
+//   watch('./pages/*.html',series('html'));
+// })
 
 // 启动服务，自动刷新
 task('connect',async ()=>{
   load.connect.server({
     root: './dist',
     livereload: true,
-    port: 3000
+    port: 3001
   });
 })
 
-// 构建开发包
-task('dev',series('delDist','image','sass','script','html','connect','watch'))
+// 构建生产包
+task('dev',series('delDist','image','sass','script','html','connect','jq','font','swiper','json','reset','php'))

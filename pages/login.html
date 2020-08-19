@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="../image/favicon-90c2e618ff.ico">
     <link rel="stylesheet" href="../reset/reset.css">
     <link rel="stylesheet" href="../font-awesome/css/all.css">
+    <!-- <link rel="stylesheet" href="../sass/login.css"> -->
     <!-- <link rel="stylesheet" href="/sass/index.scss"> -->
     <link rel="stylesheet" href="../css/login.min.css">
-    <link rel="stylesheet" href="../swiper/swiper.css">
-    <link rel="stylesheet" href="../swiper/animate.css">
+    <!-- <link rel="stylesheet" href="../swiper/swiper.css">
+    <link rel="stylesheet" href="../swiper/animate.css"> -->
     <script src="../jquery-1.8.3/jquery-1.8.3.min.js"></script>
 </head>
 
@@ -26,15 +27,17 @@
         <div class="reg-main">
             <div class="reg-main-box">
                 <div class="boxinner">
-                    <h1>验证码登录</h1>
+                    <h1>登录</h1>
                     <div class="phone-inp">
                         <div class="qvhao">+86<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-                        <input type="text" placeholder="手机号码">
+                        <input type="text" placeholder="手机号码" id="phone">
                     </div>
-
-                    <input type="submit" class="btn" value="立即注册">
+                    <div class="numsure">
+                        <input type="text" placeholder="密码" id="password">
+                    </div>
+                    <input type="submit" class="btn" value="登录"">
                     <div class="login"> <a href="./register.html">注册</a> </div>
-                    <div class="forgetpsd"><a href="#"></a> 忘记密码</div>
+                    <div class="forgetpsd"><a href="./index.html"></a> 去首页</div>
                 </div>
             </div>
         </div>
@@ -81,9 +84,9 @@
 
 
 
-    <script src="../swiper/swiper.js"></script>
-    <script src="../swiper/swiper.animate1.0.3.min.js"></script>
-    <script src="../script/index.js"></script>
+    <!-- <script src="../swiper/swiper.js"></script>
+    <script src="../swiper/swiper.animate1.0.3.min.js"></script> -->
+    <script src="../script/login.js"></script>
 </body>
 
 </html>

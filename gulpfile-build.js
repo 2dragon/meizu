@@ -12,30 +12,41 @@ task('delDist',async ()=>{
 
 // 处理图片
 task('image', async ()=>{
-  src('./image/*.*')
+  src('./image/**')
   .pipe(dest('./dist/image'))
 })
 
 // 处理sass
+// task('sass', async ()=>{
+//   src('./sass/*.scss')
+//   .pipe(load.sassChina())
+//   .pipe(load.rev())
+//   .pipe(load.minifyCss())
+//   .pipe(dest('./dist/css'))
+//   .pipe(load.rev.manifest())
+//   .pipe(dest('./rev/css'))
+// })
+// 处理sass
+// task('sass', async ()=>{
+//   src('./sass/*.scss')
+//   .pipe(load.sassChina())
+//   .pipe(load.minifyCss())
+//   .pipe(dest('./dist/sass'))
+// })
+// 处理sass
 task('sass', async ()=>{
-  src('./sass/*.scss')
-  .pipe(load.sassChina())
-  .pipe(load.rev())
-  .pipe(load.minifyCss())
+  src('./css/*.css')
+  // .pipe(load.sassChina())
+  // .pipe(load.minifyCss())
   .pipe(dest('./dist/css'))
-  .pipe(load.rev.manifest())
-  .pipe(dest('./rev/css'))
 })
 
 // 处理js
 task('script', async ()=>{
   src('./script/*.js')
-  .pipe(load.rev())
   .pipe(load.babel({presets: ['@babel/env']}))
   .pipe(load.uglify())
   .pipe(dest('./dist/script'))
-  .pipe(load.rev.manifest())
-  .pipe(dest('./rev/js'))
 })
 
 // 处理html
@@ -44,6 +55,36 @@ task('html', async ()=>{
   .pipe(load.revCollector({replaceReved:true}))
   .pipe(load.minifyHtml())
   .pipe(dest('./dist/pages'))
+})
+// 处理jq
+task('jq', async ()=>{
+  src(['./jquery-1.8.3/jquery-1.8.3.min.js'])
+  .pipe(dest('./dist/jquery-1.8.3'))
+})
+// 处理font-awesome
+task('font', async ()=>{
+  src(['./font-awesome/**'])
+  .pipe(dest('./dist/font-awesome'))
+})
+// 处理swiper
+task('swiper', async ()=>{
+  src(['./swiper/*.*'])
+  .pipe(dest('./dist/swiper'))
+})
+// 处理json
+task('json', async ()=>{
+  src(['./json/**'])
+  .pipe(dest('./dist/json'))
+})
+// 处理reset
+task('reset', async ()=>{
+  src(['./reset/**'])
+  .pipe(dest('./dist/reset'))
+})
+// 处理php
+task('php', async ()=>{
+  src(['./php/**'])
+  .pipe(dest('./dist/php'))
 })
 
 // 监听文件变化
@@ -64,4 +105,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','image','sass','script','html','connect'))
+task('build',series('delDist','image','sass','script','html','connect','jq','font','swiper','json','reset','php'))

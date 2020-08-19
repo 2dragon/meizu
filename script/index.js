@@ -1,3 +1,26 @@
+var logoa1 = "../image/people3.png";
+var logoa2 = "../image/people.png";
+var logo3 = "../image/bearbb.png";
+
+console.log("phone" + localStorage.getItem("phone"));
+if (localStorage.getItem("phone")) {
+  logoa1 = logo3;
+  logoa2 = logo3;
+  $(".people-down-ul")
+    .html(` <li><a href="./index.html" class="tuichu">退出登录</a></li>
+  <li><a href="#">我的订单</a></li>
+  <li><a href="#">M码通道</a></li>`);
+}
+$(".tuichu").on("click", function () {
+  localStorage.clear();
+  logoa1 = "../image/people3.png";
+  logoa2 = "../image/people.png";
+  $(".people-down-ul").html(` <li><a href="./login.html">立即登录</a></li>
+                    <li><a href="./register.html">立即注册</a></li>
+  <li><a href="#">我的订单</a></li>
+  <li><a href="#">M码通道</a></li>`);
+});
+
 $.ajax({
   url: "../json/top.json",
   type: "get",
@@ -10,7 +33,7 @@ $.ajax({
       console.log(item.goodsnum);
       switch (item.goodsnum.slice(0, 1)) {
         case "1":
-          console.log("执行",1);
+          console.log("执行", 1);
           var goodsDom1 = ` <div class="swiper-slide">
       <a href="./detail.html?goodsnum=${item.goodsnum}">
         <img src="${item.src}" alt="1">
@@ -20,7 +43,8 @@ $.ajax({
           break;
 
         case "4":
-        var goodsDom4 = ` 
+          var goodsDom4 = ` 
+        <a href="./detail.html?goodsnum=${item.goodsnum}">
         <div class="fourshow-goods yinying">
           <img src="${item.src}" alt="">
           <div class="goodstit">
@@ -28,7 +52,8 @@ $.ajax({
             <p>${item.desc}</p>
             <h2> <i>￥</i>${item.price}<em></em><s></s></h2>
           </div>
-        </div>`;
+        </div>
+        </a>`;
           $(".fourshow").append(goodsDom4);
           break;
       }
@@ -48,12 +73,12 @@ $.ajax({
           if ("012578".includes(this.activeIndex)) {
             $(".navitem a").css("color", "#fff");
             $(".top-nav-left svg").attr("fill", "#fff");
-            $(".top-nav-right-people img").attr("src", "../image/people3.png");
+            $(".top-nav-right-people img").attr("src", logoa1);
             $(".top-nav-right-buycar img").attr("src", "../image/buycar3.png");
           } else {
             $(".navitem a").css("color", "#333");
             $(".top-nav-left svg").attr("fill", "#008cff");
-            $(".top-nav-right-people img").attr("src", "../image/people.png");
+            $(".top-nav-right-people img").attr("src", logoa2);
             $(".top-nav-right-buycar img").attr("src", "../image/buycar2.png");
           }
         },

@@ -691,6 +691,7 @@ $fontf2: "PingFang SC", "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", Arial,
   width: 100%;
   height: auto;
   margin-top: 80px;
+ 
   overflow: hidden;
   background-color: #f7f7f7;
   .datucenter {
@@ -721,9 +722,118 @@ $fontf2: "PingFang SC", "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", Arial,
       overflow: hidden;
       margin-top: 15px;
       background-color: #0f0;
+      margin-bottom: 100px;
       img {
         width: 1240px;
         height: auto;
+      }
+    }
+  }
+}
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 48px 0 0px 0;
+  .footer-center {
+    width: 1260px;
+    height: 200px;
+    margin: 0 auto;
+    .footer-server {
+      width: 1260px;
+      height: 84px;
+      position: relative;
+      .footer-server-item {
+        width: 150px;
+        height: 68px;
+        float: left;
+        img {
+          width: 50px;
+          height: 39px;
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          width: auto;
+          height: 30px;
+          line-height: 30px;
+          color: #999;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      .kefu {
+        width: 158px;
+        height: 102px;
+        font-family: Helvetica, Tahoma, Arial, Hiragino Sans GB, Microsoft YaHei,
+          SimSun, Heiti, sans-serif;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        .kefu-day {
+          color: #999;
+          font-size: 12px;
+          text-align: right;
+          float: right;
+        }
+        .kefu-phone {
+          color: #008cff;
+          font-size: 25px;
+          text-align: right;
+          float: right;
+        }
+        .kefu-online {
+          display: block;
+          width: 80px;
+          height: 30px;
+          line-height: 30px;
+          color: #fff;
+          font-size: 14px;
+          text-align: center;
+          background-color: #008cff;
+          float: right;
+          padding: 0 10px;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    .footer-hr {
+      margin: 10px auto 28px;
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #eee;
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 28px;
+    }
+
+    .footer-info {
+      width: 1260px;
+      height: 18px;
+      position: relative;
+      .footer-info-ul {
+        color: #999;
+        li {
+          float: left;
+
+          .footer-info-line {
+            margin: 0 15px;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .footer-href {
+      padding-top: 8px;
+      color: #999;
+      a {
+        color: #999;
       }
     }
   }
