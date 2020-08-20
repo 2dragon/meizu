@@ -57,6 +57,7 @@ body {
   height: 424px;
   padding-top: 70px;
   margin: 0 auto;
+  position: relative;
 }
 
 .register .reg-main .center .reg-main-box .boxinner h1 {
@@ -70,7 +71,6 @@ body {
   height: 48px;
   border: 1px solid #dadada;
   margin-top: 100px;
-  margin-bottom: 36px;
 }
 
 .register .reg-main .center .reg-main-box .boxinner .phone-inp .qvhao {
@@ -99,10 +99,17 @@ body {
   margin-left: 8px;
 }
 
+.register .reg-main .center .reg-main-box .boxinner .phonetip {
+  color: red;
+  position: absolute;
+  top: 250px;
+}
+
 .register .reg-main .center .reg-main-box .boxinner .numsure {
   width: 298px;
   height: 48px;
   border: 1px solid #dadada;
+  margin-top: 36px;
   margin-bottom: 36px;
 }
 
@@ -113,6 +120,12 @@ body {
   float: left;
   margin-top: 14px;
   margin-left: 8px;
+}
+
+.register .reg-main .center .reg-main-box .boxinner .passwordtip {
+  color: red;
+  position: absolute;
+  top: 330px;
 }
 
 .register .reg-main .center .reg-main-box .boxinner .tips {

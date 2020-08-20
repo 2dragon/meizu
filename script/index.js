@@ -124,6 +124,70 @@ $.ajax({
     });
   },
 });
+//渲染第四部分
+// $.ajax({
+//   url: "../json/third.json",
+//   type: "get",
+//   dataType: "json",
+//   success: function (jsonArr) {
+//     console.log("你是进不来？？");
+//     //渲染数据
+//     var itemnum = 0;
+//     $.each(jsonArr, function (index, item) {
+//       var faDom = `
+//             <h3>${item.title}</h3>
+//             <a href="./detail.html?goodsnum=${item.headernum}">
+//               <div>
+//                 <div class="secimg baimengban">
+//                   <img src="${item.headersrc}" alt="">
+//                 </div>
+//               </div>
+//             </a>
+//             `;
+//             console.log(faDom);
+//       $(".goodslist").append(faDom).append($('<div class="glsec-center"></div>'));
+//       $(".glsec-center").append($('<div class="glsec"></div>'));
+//       console.log($(".goodslist")[0]);
+//       var dom4;
+//       $.each(item.allgoods, function (ind, i) {
+//         $.each(i, function (id, ip){
+//         if (id == 0) {
+//           var ziDom = `
+//         <div class="glsec-item-header">
+//         <a href="./detail.html?goodsnum=${i[ind].goodnum}">
+//           <img src="${i[ind].goodssrc}" alt="">
+//           <div class="goodstit ">
+//             <h1>${i[ind].goodsname}</h1>
+//             <p>${i[ind].goodsdesc}</p>
+//             <h2> <i>￥</i>${i[ind].goodsprice}<em></em><s></s></h2>
+//           </div>
+//         </a>
+//       </div>
+//             `;
+//         } else {
+//           var ziDom = `
+//         <div class="glsec-item-show yinying">
+//         <a href="./detail.html?goodsnum=${i[ind].goodnum}">
+//           <img src="${i[ind].goodssrc}" alt="">
+//           <div class="goodstit ">
+//             <h1>${i[ind].goodsname}</h1>
+//             <p>${i[ind].goodsdesc}</p>
+//             <h2> <i>￥</i>${i[ind].goodsprice}<em></em><s></s></h2>
+//           </div>
+//         </a>
+//       </div>
+//             `;
+//         }
+// }
+
+//         $('<div class="glsec-item"></div>').append(ziDom).appendTo($(".glsec"));
+        
+//       });
+//       // $('.glsec-item').appendTo($(".glsec"));
+//       console.log($(".glsec")[0]);
+//     });
+//   },
+// });
 
 //初始化：关闭框内显示，清除背景颜色
 $(".hoverdown-content").addClass("notshow");

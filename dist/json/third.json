@@ -1,0 +1,99 @@
+[
+  {
+    "title": "手机",
+    "headernum":"",
+    "headersrc": "../image/goodslist/glad1.jpg",
+    "allgoods": [
+      [
+        {
+          "goodsnum": "3001",
+          "goodssrc": "../image/goodslist/ia_700001515.jpg",
+          "goodsname": "魅族 EP3C 耳机11111",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3002",
+          "goodssrc": "../image/goodslist/ia_700001516.png",
+          "goodsname": "魅族 17 航母限定版",
+          "goodsdesc": "以梦为舰 热爱起航",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3003",
+          "goodssrc": "../image/goodslist/ia_700001517.png",
+          "goodsname": "魅族 17 航母限定版",
+          "goodsdesc": "以梦为舰 热爱起航",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3004",
+          "goodssrc": "../image/goodslist/ia_700001518.png",
+          "goodsname": "魅族 17 航母限定版",
+          "goodsdesc": "以梦为舰 热爱起航",
+          "goodsprice": "129"
+        }
+      ],
+      [
+        {
+          "goodsnum": "3005",
+          "goodssrc": "../image/goodslist/ia_700001521.jpg",
+          "goodsname": "魅族 EP3C 耳机",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3006",
+          "goodssrc": "../image/goodslist/ia_700001519.png",
+          "goodsname": "魅族 EP3C 耳机",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3007",
+          "goodssrc": "../image/goodslist/ia_700001520.png",
+          "goodsname": "魅族 EP3C 耳机",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3008",
+          "goodssrc": "../image/goodslist/ia_700001522.png",
+          "goodsname": "魅族 EP3C 耳机",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        }
+      ],
+      [
+        {
+          "goodsnum": "3009",
+          "goodssrc": "../image/goodslist/ia_700001523.jpg",
+          "goodsname": "魅族 EP3C 耳机333",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3010",
+          "goodssrc": "../image/goodslist/ia_700001524.png",
+          "goodsname": "魅族 EP3C 耳机333",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3011",
+          "goodssrc": "../image/goodslist/ia_700001525.png",
+          "goodsname": "魅族 EP3C 耳机333",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        },
+        {
+          "goodsnum": "3012",
+          "goodssrc": "../image/goodslist/ia_700001526.png",
+          "goodsname": "魅族 EP3C 耳机333",
+          "goodsdesc": "Hi-Res 认证高解析音质 | Type-C数字接口",
+          "goodsprice": "129"
+        }
+      ]
+    ]
+  }
+]
