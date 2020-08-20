@@ -1,8 +1,7 @@
 var logoa1 = "../image/people3.png";
 var logoa2 = "../image/people.png";
 var logo3 = "../image/bearbb.png";
-
-console.log("phone" + localStorage.getItem("phone"));
+var yuanlai = "no";
 if (localStorage.getItem("phone")) {
   logoa1 = logo3;
   logoa2 = logo3;
@@ -29,11 +28,8 @@ $.ajax({
     //渲染数据
 
     $.each(jsonArr, function (index, item) {
-      console.log(item.goodsnum.slice(0, 1));
-      console.log(item.goodsnum);
       switch (item.goodsnum.slice(0, 1)) {
         case "1":
-          console.log("执行", 1);
           var goodsDom1 = ` <div class="swiper-slide">
       <a href="./detail.html?goodsnum=${item.goodsnum}">
         <img src="${item.src}" alt="1">
@@ -68,8 +64,6 @@ $.ajax({
           </li>
             `;
           $(".hoverdown-content").eq(0).append(goodsDom9);
-          console.log("bobobo");
-          console.log($(".hoverdown-content").eq(0));
           break;
       }
     });
@@ -83,16 +77,17 @@ $.ajax({
       },
       on: {
         slideChangeTransitionEnd: function (swiper, event) {
-          console.log("触发改变了", this.activeIndex);
           //你的事件
           if ("012578".includes(this.activeIndex)) {
             $(".navitem a").css("color", "#fff");
             $(".top-nav-left svg").attr("fill", "#fff");
+            yuanlai = "white";
             $(".top-nav-right-people img").attr("src", logoa1);
             $(".top-nav-right-buycar img").attr("src", "../image/buycar3.png");
           } else {
             $(".navitem a").css("color", "#333");
             $(".top-nav-left svg").attr("fill", "#008cff");
+            yuanlai = "blue";
             $(".top-nav-right-people img").attr("src", logoa2);
             $(".top-nav-right-buycar img").attr("src", "../image/buycar2.png");
           }
@@ -109,8 +104,6 @@ $.ajax({
     //渲染数据
     var itemnum = 0;
     $.each(jsonArr, function (index, item) {
-      console.log(item.goodsnum.slice(0, 1));
-      console.log(item.goodsnum);
       if (itemnum < 8) {
         switch (item.goodsnum.slice(0, 1)) {
           case "9":
@@ -125,14 +118,13 @@ $.ajax({
             `;
             $(".hoverdown-content").eq(0).append(goodsDom9);
             itemnum++;
-            console.log("bobobo");
-            console.log($(".hoverdown-content").eq(0));
             break;
         }
       }
     });
   },
 });
+
 //初始化：关闭框内显示，清除背景颜色
 $(".hoverdown-content").addClass("notshow");
 $(".top-nav-wrap").css("background", "");
@@ -143,14 +135,9 @@ $(".top-nav-right-ul").on("mouseenter", "li", function () {
   $(".hoverdown-content").addClass("notshow");
   var index = $(this).index();
   $(".top-nav-wrap").addClass("whitebg");
-  console.log(index, "我不是");
   if ("01239".includes(index)) {
     $(".top-nav-left svg").attr("fill", "#008cff");
-
     $(".navitem a").addClass("blackpink");
-
-    console.log($(".navitem a").hasClass("blackpink"));
-    console.log($(this).index() + "进来了");
     //打开指定的内容显示
     $(".hoverdown-content").eq(index).removeClass("notshow");
     $(".hoverdownwrap").slideDown(30, "swing", function () {});
@@ -165,13 +152,19 @@ $(".top-nav-right-ul").on("mouseenter", "li", function () {
 });
 
 $(".top-nav-right-uldown").on("mouseleave", function () {
+  if (yuanlai == "blue") {
+    console.log("原来是" + yuanlai);
+    //没有改变
+    $(".top-nav-left svg").attr("fill", "#008cff");
+  } else {
+    console.log("原来是" + yuanlai);
+    $(".top-nav-left svg").attr("fill", "#fff");
+  }
+
   $(".navitem a").removeClass("blackpink");
-  $(".top-nav-left svg").attr("fill", "#fff");
   var index = $(this).index();
-  console.log(index + "转身离开");
   $(".hoverdown-content").addClass("notshow");
   $(".hoverdownwrap").slideUp(30, "swing", function () {
     $(".top-nav-wrap").removeClass("whitebg");
   });
-  console.log("我调用222");
 });

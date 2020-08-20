@@ -48,7 +48,7 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
   -webkit-box-shadow: 0px 0px 20px #ccc;
   box-shadow: 3px 3px 10px #ccc;
 }
-body{
+body,html{
   min-width: 1240px;
 }
 .top {
@@ -166,9 +166,9 @@ body{
                   }
                 }
                 .the9 {
-                  width: 1260px;
+                  width: 1240px;
                   img {
-                    width: 1260px;
+                    width: 1240px;
                     height: 305px;
                   }
                 }
@@ -376,14 +376,14 @@ body{
   }
 
   .section-center {
-    width: 1260px;
+    width: 1240px;
     height: auto;
     margin: 0 auto;
     .twoshow {
       margin-top: 10px;
       overflow: hidden;
       .twoshow-goods {
-        width: 615px;
+        width: 605px;
         height: 610px;
         background-color: #fff;
         float: left;
@@ -408,7 +408,7 @@ body{
           height: 103px;
           margin-top: 45px;
           .goods-name {
-            width: 650px;
+            width: 100%;
             height: 41px;
             text-align: center;
             font-size: 28px;
@@ -448,7 +448,7 @@ body{
 
       margin-top: 15px;
       .fourshow-goods {
-        width: 303px;
+        width: 300px;
         height: 375px;
         margin-right: 10px;
         float: left;
@@ -521,7 +521,7 @@ body{
     }
   }
   .glsec-center {
-    width: 1260px;
+    width: 1240px;
     height: auto;
     margin: 0 auto;
     .glsec {
@@ -534,16 +534,16 @@ body{
         margin-bottom: 12px;
         .glsec-item-header {
           float: left;
-          width: 303px;
+          width: 300px;
           height: 375px;
           margin-right: 10px;
           position: relative;
           img {
-            width: 303px;
+            width: 300px;
             height: 375px;
           }
           .goodstit {
-            width: 303px;
+            width: 300px;
             height: 80px;
             position: absolute;
             top: 276px;
@@ -581,7 +581,7 @@ body{
 
         .glsec-item-show {
           float: left;
-          width: 303px;
+          width: 300px;
           height: 375px;
           margin-right: 10px;
           float: left;
@@ -594,7 +594,7 @@ body{
             margin-top: 30px;
           }
           .goodstit {
-            width: 303px;
+            width: 300px;
             height: 80px;
             h1 {
               width: 100%;
@@ -635,11 +635,11 @@ body{
   height: auto;
   padding: 48px 0 0px 0;
   .footer-center {
-    width: 1260px;
+    width: 1240px;
     height: 200px;
     margin: 0 auto;
     .footer-server {
-      width: 1260px;
+      width: 1240px;
       height: 84px;
       position: relative;
       .footer-server-item {
@@ -709,7 +709,7 @@ body{
     }
 
     .footer-info {
-      width: 1260px;
+      width: 1240px;
       height: 18px;
       position: relative;
       .footer-info-ul {
