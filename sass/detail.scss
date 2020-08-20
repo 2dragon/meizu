@@ -10,6 +10,9 @@
     clear: both;
   }
 }
+body{
+  min-width: 1240px;
+}
 $pcolor: #515151;
 $bgcolor: #f4f4f4;
 $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
@@ -100,6 +103,9 @@ $fontf2: "PingFang SC", "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", Arial,
                   height: 20px;
                   text-align: center;
                   color: $pcolor;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
                 }
               }
             }

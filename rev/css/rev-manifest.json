@@ -1,7 +1,7 @@
 {
-  "detail.css": "detail-c72ec59b70.css",
-  "index.css": "index-71cedd18e9.css",
-  "list.css": "list-410d6c5fa2.css",
-  "login.css": "login-5d52f47bb4.css",
-  "register.css": "register-5a79831bfd.css"
+  "detail.min.css": "detail-f2622ae4ad.min.css",
+  "index.min.css": "index-71c70e9aa3.min.css",
+  "list.min.css": "list-1ea23b44ab.min.css",
+  "login.min.css": "login-33a435252f.min.css",
+  "register.min.css": "register-8c036811bf.min.css"
 }

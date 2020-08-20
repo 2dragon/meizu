@@ -30,6 +30,7 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
 .notshow {
   display: none;
 }
+
 .baimengban:hover {
   position: relative;
   &::after {
@@ -47,7 +48,9 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
   -webkit-box-shadow: 0px 0px 20px #ccc;
   box-shadow: 3px 3px 10px #ccc;
 }
-
+body{
+  min-width: 1240px;
+}
 .top {
   @include clearfix;
   .topwrap {
@@ -55,10 +58,12 @@ $fontf: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun,
     position: relative;
 
     .top-img-container {
-      width: 100%;
+      width: auto;
+      min-width: 1240px;
       height: 670px;
       .swiper-wrapper {
-        width: 100%;
+        width: auto;
+        min-width: 1240px;
         height: 670px;
         .swiper-slide {
           position: relative;

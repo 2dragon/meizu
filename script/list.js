@@ -2,7 +2,6 @@ var logoa1 = "../image/people3.png";
 var logoa2 = "../image/people.png";
 var logo3 = "../image/bearbb.png";
 
-console.log("phone" + localStorage.getItem("phone"));
 if (localStorage.getItem("phone")) {
   $(".top-nav-right-people img").attr("src", logo3);
   $(".people-down-ul")
@@ -57,40 +56,41 @@ $(".top-nav-right-uldown").on("mouseleave", function () {
   });
 });
 
-console.log("进来了吗？？？");
 $.ajax({
   url: "../json/detail.json",
   type: "get",
   dataType: "json",
   success: function (jsonArr) {
     //渲染数据
-    console.log("看看问号后？");
     $.each(jsonArr, function (index, item) {
-      console.log(window.location.search.substr(6));
       var flag;
+      var flagname;
       switch (window.location.search.substr(6)) {
         case "phone":
           flag = 9;
+          flagname="手机";
           break;
         case "voice":
           flag = 8;
+          flagname="声学";
           break;
         case "accessories":
-          flag = 9;
+          flag = 8;
+          flagname="配件";
           break;
         case "life":
-          flag = 9;
+          flag = 8;
+          flagname="生活";
           break;
       }
-      //   console.log(item.goodsnum.slice(0, 1));
       if (item.goodsnum.slice(0, 1) == flag) {
-		  console.log("我等于flag");
+        $(".list-tips-tit").text(flagname);
         var goodsDom = `  <a href="./detail.html?goodsnum=${item.goodsnum}">
 		 <div class="list-goods-item">
 		<div class="imgwindow">
 			<div class="imgscroll">
 				<img src="${item.imgs[0]}" alt="">
-				<!-- <img src="../image/list/9001.jpg" alt=""> -->
+				<!-- <img src=flag"../image/list/9001.jpg" alt=""> -->
 			</div>
 		</div>
 		<ul class="tiao">

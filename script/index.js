@@ -56,6 +56,21 @@ $.ajax({
         </a>`;
           $(".fourshow").append(goodsDom4);
           break;
+
+        case "9":
+          var goodsDom9 = `
+            <li>
+            <a href="./detail.html?goodsnum=${item.goodsnum}">
+            <img src="${item.src}" alt="">
+            <p>【热卖】${item.name}</p>
+            <p>￥${item.newprice}</p>
+            </a>
+          </li>
+            `;
+          $(".hoverdown-content").eq(0).append(goodsDom9);
+          console.log("bobobo");
+          console.log($(".hoverdown-content").eq(0));
+          break;
       }
     });
 
@@ -86,7 +101,38 @@ $.ajax({
     });
   },
 });
-
+$.ajax({
+  url: "../json/detail.json",
+  type: "get",
+  dataType: "json",
+  success: function (jsonArr) {
+    //渲染数据
+    var itemnum = 0;
+    $.each(jsonArr, function (index, item) {
+      console.log(item.goodsnum.slice(0, 1));
+      console.log(item.goodsnum);
+      if (itemnum < 8) {
+        switch (item.goodsnum.slice(0, 1)) {
+          case "9":
+            var goodsDom9 = `
+            <li>
+            <a href="./detail.html?goodsnum=${item.goodsnum}">
+            <img src="${item.imgs}" alt="">
+            <p>【热卖】${item.tit}</p>
+            <p>￥${item.newprice}</p>
+            </a>
+          </li>
+            `;
+            $(".hoverdown-content").eq(0).append(goodsDom9);
+            itemnum++;
+            console.log("bobobo");
+            console.log($(".hoverdown-content").eq(0));
+            break;
+        }
+      }
+    });
+  },
+});
 //初始化：关闭框内显示，清除背景颜色
 $(".hoverdown-content").addClass("notshow");
 $(".top-nav-wrap").css("background", "");

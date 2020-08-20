@@ -10,8 +10,13 @@
   display: none;
 }
 
+body {
+  min-width: 1240px;
+}
+
 .top-nav-wrap {
   width: 100%;
+  min-width: 1240px;
   height: 80px;
   border-bottom: 1px solid #eee;
 }
@@ -104,6 +109,9 @@
   height: 20px;
   text-align: center;
   color: #515151;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .top-nav-wrap .top-nav .top-nav-right .top-nav-right-uldown .hoverdownwrap .hoverdown .the9 {

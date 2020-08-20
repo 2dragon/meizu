@@ -35,18 +35,30 @@ task('image', async ()=>{
 // })
 // 处理sass
 task('sass', async ()=>{
-  src('./css/*.css')
-  // .pipe(load.sassChina())
-  // .pipe(load.minifyCss())
+  src('./css/*.min.css')
+  .pipe(load.rev())
+  .pipe(load.minifyCss())
   .pipe(dest('./dist/css'))
+  .pipe(load.rev.manifest())
+  .pipe(dest('./rev/css'))
 })
-
-// 处理js
+// 处理css
+// task('css', async ()=>{
+//   src('./css/*.css')
+//   .pipe(load.rev())
+//   .pipe(load.minifyCss())
+//   .pipe(dest('./dist/css'))
+//   .pipe(load.rev.manifest())
+//   .pipe(dest('./rev/css'))
+// })
 task('script', async ()=>{
   src('./script/*.js')
+  .pipe(load.rev())
   .pipe(load.babel({presets: ['@babel/env']}))
   .pipe(load.uglify())
   .pipe(dest('./dist/script'))
+  .pipe(load.rev.manifest())
+  .pipe(dest('./rev/js'))
 })
 
 // 处理html
@@ -56,6 +68,7 @@ task('html', async ()=>{
   .pipe(load.minifyHtml())
   .pipe(dest('./dist/pages'))
 })
+
 // 处理jq
 task('jq', async ()=>{
   src(['./jquery-1.8.3/jquery-1.8.3.min.js'])

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  min-width: 1240px;
+}
+
 .whitebg {
   background-color: #fff;
 }
@@ -105,6 +109,9 @@
   height: 20px;
   text-align: center;
   color: #515151;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .top-nav-wrap .top-nav .top-nav-right .top-nav-right-uldown .hoverdownwrap .hoverdown .the9 {
